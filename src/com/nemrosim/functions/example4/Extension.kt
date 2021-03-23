@@ -4,11 +4,11 @@ fun calculate(a: Int, b: Int): Int {
     return a + b
 }
 
-fun addAStringToNumber(number:Int):String{
-    return "$number. This is a very nice number!"
+fun Int.addAStringToNumber(): String {
+    return "$this. This is a very nice number!"
 }
 
 fun main() {
-    print(addAStringToNumber(calculate(2, 2)))
+    print(calculate(2, 2).addAStringToNumber())
 }
 
